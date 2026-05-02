@@ -8,4 +8,6 @@ def create_job(job: JobPosting):
 
 
 def get_all_jobs():
+    if len(jobs_db) == 0:
+        return "No jobs yet avliable"
     return jobs_db
